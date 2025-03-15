@@ -12,11 +12,14 @@ We've implemented a Wide ResNet variant that balances model size and performance
 
 ## Repository Structure
 
+- 'Google_Collab_notebook.ipynb' : Contains all the code related to the project. You can either run this Google Colab notebook or execute the following scripts in order: train.py, generate_csv.py, and run_validation.py.
 - `train.py`: Script to train the model from scratch
-- `predict.py`: Script to generate predictions on test data
+- `generate_csv.py`: Script to generate predictions on test data and generate csv file 
+-  'run_validation.py' : Script to generate accuracy,confusion matrix and other analysis validation dataset.
 - `best_model.pth`: Our best performing model weights
 - `requirements.txt`: Required dependencies
 - `README.md`: Project documentation
+- 'Results' : Contains images related to results
 
 ## Model Architecture
 
@@ -49,33 +52,21 @@ For training data, we applied multiple augmentation techniques:
 ## Results
 
 Our model achieves:
-- Validation accuracy: ~99%
+- Validation accuracy: 97.09%
 - Test accuracy: 88.913%
 
 ## How to Run
 
-### Setup
+1. Upload the data(deep-learning-spring-2025-project-1) to your working directory. 
+2. Either run google collab notebook (which has all the necessary code and is recommeded) or run below codes
+
 ```bash
 pip install -r requirements.txt
-```
-
-### Training
-```bash
 python train.py
+python generate_csv.py
+pyhton run_validation.py
 ```
 
-### Generating Predictions
-```bash
-python predict.py
-```
-
-## Requirements
-- PyTorch
-- NumPy
-- Matplotlib
-- Pandas
-- PIL
-- torchsummary
 
 ## Citation
 Our implementation was inspired by:
