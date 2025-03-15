@@ -27,7 +27,7 @@ Our model is a WideResNet with:
 - 3 stages of residual blocks with [3, 3, 3] layers per stage
 - Width multiplier of 1.0 to control model size
 - Dropout rate of 0.2 for regularization
-- Total parameters: ~3.38 million
+- Total parameters: ~4.38 million
 
 ## Training Methodology
 
@@ -36,7 +36,7 @@ We used the following training strategy:
 - Cosine annealing learning rate schedule
 - Initial learning rate of 0.1
 - Weight decay of 5e-4
-- 500 epochs of training
+- 1000 epochs of training
 - Mixup data augmentation with alpha=0.2
 - Label smoothing with value 0.1
 
