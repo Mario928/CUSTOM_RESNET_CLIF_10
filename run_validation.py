@@ -236,5 +236,5 @@ def main():
     plt.savefig('prediction_examples.png')
     plt.show()
     
-if _name_ == "_main_":
+if _name_ == "__main__":
     main()
