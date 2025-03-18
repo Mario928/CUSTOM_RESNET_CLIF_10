@@ -6,7 +6,7 @@ This repository contains our implementation for the Deep Learning Spring 2025 Pr
 ## Project Overview
 
 We've implemented a Wide ResNet variant that balances model size and performance on the CIFAR-10 image classification task. Our model:
-- Uses a parameter-efficient ResNet design with 3.38 million parameters
+- Uses a parameter-efficient ResNet design with 4.38 million parameters
 - Implements residual blocks with batch normalization
 - Incorporates modern training techniques including mixup and label smoothing
 
